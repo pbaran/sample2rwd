@@ -24,11 +24,21 @@ a {
 
 #gallery {
 	margin: 3em 3em 3em 0;
+	overflow: hidden;
 	float: right;
 }
 
+#gallery-inner {
+	width: 100%;
+}
+
 #gallery div {
-	text-align: center;
+	display: block;
+}
+
+#gallery div.single {
+	margin: 0 auto;
+	width: 50%;
 }
 
 #offer {

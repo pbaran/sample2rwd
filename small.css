@@ -1,4 +1,11 @@
+#contact {
+}
+
 #gallery {
 	float: none;
+}
+
+#gallery div.single {
+	width: auto;
 }
 
