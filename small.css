@@ -1,11 +1,9 @@
+#galery {
+	float: left;
+	background-color: lightblue;
+}
+
 #contact {
-}
-
-#gallery {
-	float: none;
-}
-
-#gallery div.single {
-	width: auto;
+	background-color: lightgray;
 }
 

@@ -19,22 +19,12 @@ a {
 }
 
 #contact {
-	margin: 3em;
+	margin: 3em 0 3em 3em;
 	float: left;
 }
 
 #gallery {
-	margin: 3em 3em 3em 0;
-	overflow: hidden;
-	float: right;
-}
-
-#gallery-inner {
-	width: 100%;
-}
-
-#gallery div {
-	display: block;
+	margin: 3em;
 }
 
 #gallery div.single {
