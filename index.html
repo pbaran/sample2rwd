@@ -79,35 +79,18 @@
 				</center>
 			</div>
 			<div id="secondGallery">
-				<center><h3></h3><a href="javascript:fotoGal('g3/1.JPG','640','422');"><img src="imgs/1.JPG"
-																				style="border-color:#444444; border-width:1px;" width="146.47"
-																	height="97"></a>
-					<a href="javascript:fotoGal('g3/2.JPG','640','421');"><img src="imgs/2.JPG" style="border-color:#444444; border-width:1px;"
-																							width="146.47" height="97"></a>
-					<a href="javascript:fotoGal('g3/p1070058d.jpg','550','310');"><img src="imgs/p1070058d.jpg"
-																		style="border-color:#444444; border-width:1px;" width="171.41095890411"
-																  height="97"></a>
-					<a href="javascript:fotoGal('g3/p1070079d.jpg','550','310');"><img
-		src="imgs/p1070079d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97"></a>
-					<a href="javascript:fotoGal('g3/p1070082d.jpg','550','310');"><img src="imgs/p1070082d.jpg"
-																		style="border-color:#444444; border-width:1px;"
-				  width="171.41095890411"
-	  height="97"></a>
-					<a href="javascript:fotoGal('g3/p1070088d.jpg','550','310');"><img src="imgs/p1070088d.jpg"
-																		style="border-color:#444444; border-width:1px;"
-				  width="171.41095890411"
-	  height="97"></a>
-					<a href="javascript:fotoGal('g3/p1070177d.jpg','550','310');"><img src="imgs/p1070177d.jpg"
-																		style="border-color:#444444; border-width:1px;" width="171.41095890411"
-																  height="97"></a>
-					<a href="javascript:fotoGal('g3/zegluga-01.jpg','550','364');"><img src="imgs/zegluga-01.jpg"
-																		 style="border-color:#444444; border-width:1px;" width="129"
-																   height="97"></a>
-					<a href="javascript:fotoGal('g3/zegluga-02.jpg','550','368');"><img src="imgs/zegluga-02.jpg"
-																		 style="border-color:#444444; border-width:1px;" width="129"
-																   height="97"></a>
-					<a href="javascript:fotoGal('g3/zegluga-03.jpg','550','342');"><img
-		src="imgs/zegluga-03.jpg" style="border-color:#444444; border-width:1px;" width="129" height="97"></a></center>
+				<center>
+<img src="imgs/1.JPG" style="border-color:#444444; border-width:1px;" width="146.47" height="97">
+<img src="imgs/2.JPG" style="border-color:#444444; border-width:1px;" width="146.47" height="97">
+<img src="imgs/p1070058d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97">
+<img src="imgs/p1070079d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97">
+<img src="imgs/p1070082d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97">
+<img src="imgs/p1070088d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97">
+<img src="imgs/p1070177d.jpg" style="border-color:#444444; border-width:1px;" width="171.41095890411" height="97">
+<img src="imgs/zegluga-01.jpg" style="border-color:#444444; border-width:1px;" width="129" height="97">
+<img src="imgs/zegluga-02.jpg" style="border-color:#444444; border-width:1px;" width="129" height="97">
+<img src="imgs/zegluga-03.jpg" style="border-color:#444444; border-width:1px;" width="129" height="97">
+</center>
 			</div>
 		</div>
 
@@ -178,7 +161,8 @@
 		
 		</div>
 		<script>
-			var gallery = document.getElementById("gallery")
+var loadPhotoSwipe = function(galleryId) {
+			var gallery = document.getElementById(galleryId)
 			var galleryImages = [].slice.call(gallery.getElementsByTagName("img"))
 
 var items = galleryImages.map(function(image) {
@@ -210,6 +194,9 @@ var items = galleryImages.map(function(image) {
 					open(galleryImages.indexOf(this))
 				}
 			}
+}
+loadPhotoSwipe("gallery")
+loadPhotoSwipe("secondGallery")
 		</script>
 	</body>
 </html>
